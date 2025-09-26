@@ -43,3 +43,9 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙 Dark Mode";
   }
 });
+document.getElementById("downloadResume").addEventListener("click", function() {
+  const link = document.createElement("a");
+  link.href = "assets/Festus_Resume.pdf"; // Path to your actual resume
+  link.download = "Festus_Resume.pdf";
+  link.click();
+});

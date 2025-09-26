@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Festus | Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="header">
-  <div class="header-top">
-    <h1>Festus Kimani</h1>
-    <button id="themeToggle" class="btn toggle-btn">🌙 Dark Mode</button>
-  </div>
-  <p>Frontend Developer | ICT Student | Tech Enthusiast</p>
-  <button id="downloadBtn" class="btn">📄 Download Resume</button>
-</header>
+  <header class="header">
+    <h1>Festus</h1>
+    <p>Frontend Developer | ICT Enthusiast | Lifelong Learner</p>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
 
-  <!-- About Section -->
-  <section id="about" class="about section">
-    <h2>About Me</h2>
-    <p>
-      Passionate Frontend Developer skilled in crafting user-friendly interfaces
-      using HTML, CSS, JavaScript, and React. I enjoy transforming ideas into interactive
-      and accessible web experiences that make a difference.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
-      <li>React.js / Next.js</li>
-      <li>TypeScript / Tailwind CSS</li>
-      <li>Node.js / Express.js / MongoDB</li>
-      <li>Git / GitHub / Figma</li>
-    </ul>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="experience section">
-    <h2>Experience</h2>
-    <div class="exp-card">
-      <h3>Frontend Developer (Student Project)</h3>
-      <p><strong>ALX Africa</strong> | 2024 – 2025</p>
+  <main class="container">
+    <section class="profile">
+      <h2>About Me</h2>
       <p>
-        Built multiple web applications focusing on responsive design, TypeScript integration,
-        and API data handling. Collaborated with peers to develop scalable, maintainable codebases.
+        Passionate about crafting responsive, user-friendly interfaces and
+        interactive web experiences. Skilled in HTML, CSS, JavaScript, React, and TypeScript.
       </p>
-    </div>
-    <div class="exp-card">
-      <h3>ICT Support Intern</h3>
-      <p><strong>Local Institution</strong> | 2023</p>
-      <p>
-        Assisted in troubleshooting technical issues, setting up networks, and providing support for digital systems.
-      </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education section">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>Bachelor’s in Information Communication Technology (ICT)</h3>
-      <p>2020 – 2024 | Local University, Kenya</p>
-    </div>
-  </section>
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 HTML, CSS, JavaScript, TypeScript</li>
+        <li>⚛️ React.js, Next.js</li>
+        <li>🧠 UI/UX Design & Responsive Layouts</li>
+        <li>🧰 Git, GitHub, Webpack</li>
+      </ul>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section">
-    <h2>Contact Me</h2>
-    <p>📧 <a href="mailto:festuskiprop@example.com">festuskiprop@example.com</a></p>
-    <p>💼 <a href="https://github.com/festuskiprop" target="_blank">GitHub</a> | 
-       🌐 <a href="https://linkedin.com/in/festuskiprop" target="_blank">LinkedIn</a></p>
-  </section>
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Frontend Developer Intern</h3>
+        <p><strong>ALX Africa</strong> | 2024–2025</p>
+        <p>
+          Built multiple web applications including an e-commerce store,
+          movie app, and blog layout using React and Tailwind CSS.
+        </p>
+      </div>
+    </section>
 
-  <!-- Footer -->
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>Diploma in Information Communication Technology</strong></p>
+      <p>Technical University of Kenya</p>
+    </section>
+
+    <section class="resume-download">
+      <h2>My Resume</h2>
+      <div class="resume-actions">
+        <button id="downloadResume" class="btn resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </button>
+        <button id="downloadBtn" class="btn print-btn">
+          <i class="fa-solid fa-print"></i> Print Resume
+        </button>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>&copy; 2025 Festus Kimani. All Rights Reserved.</p>
+    <p>&copy; 2025 Festus | Designed with ❤️</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/your-github" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:youremail@example.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

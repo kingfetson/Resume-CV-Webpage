@@ -1,0 +1,340 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  color: #0ea5e9;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #0d9488;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+.header {
+  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: #0d9488;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0d9488;
+  color: white;
+}
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+.section h2 {
+  font-size: 1.8rem;
+  color: #0d9488;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0ea5e9;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.section p {
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* ------------------------------
+   SKILLS
+------------------------------ */
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.skills li {
+  background: white;
+  border-left: 4px solid #0d9488;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.skills li:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------------------
+   EXPERIENCE & EDUCATION
+------------------------------ */
+.exp-card,
+.edu-card {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover,
+.edu-card:hover {
+  transform: scale(1.02);
+}
+
+.exp-card h3,
+.edu-card h3 {
+  color: #0ea5e9;
+}
+
+.exp-card p strong {
+  color: #0d9488;
+}
+
+/* ------------------------------
+   CONTACT
+------------------------------ */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.footer {
+  background: #0d9488;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+}
+/* ------------------------------
+   PRINT STYLES (for PDF Download)
+------------------------------ */
+@media print {
+  .btn,
+  .footer {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  section {
+    page-break-inside: avoid;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  h1, h2, h3 {
+    color: black;
+  }
+}
+/* ------------------------------
+   DARK MODE THEME
+------------------------------ */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode a {
+  color: #38bdf8;
+}
+
+body.dark-mode .section {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+body.dark-mode .footer {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.toggle-btn {
+  background: #64748b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #475569;
+}
+/* ------------------------------
+   DARK MODE THEME
+------------------------------ */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode a {
+  color: #38bdf8;
+}
+
+body.dark-mode .section {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+body.dark-mode .footer {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.toggle-btn {
+  background: #64748b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #475569;
+}
+/* ------------------------------
+   DARK MODE THEME
+------------------------------ */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode a {
+  color: #38bdf8;
+}
+
+body.dark-mode .section {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+body.dark-mode .footer {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.toggle-btn {
+  background: #64748b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #475569;
+}

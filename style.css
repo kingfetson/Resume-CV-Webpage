@@ -209,132 +209,52 @@ section {
     color: black;
   }
 }
-/* ------------------------------
-   DARK MODE THEME
------------------------------- */
-body.dark-mode {
-  background-color: #0f172a;
-  color: #f1f5f9;
-  transition: background 0.3s, color 0.3s;
-}
-
-body.dark-mode a {
-  color: #38bdf8;
-}
-
-body.dark-mode .section {
-  background: #1e293b;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-body.dark-mode .footer {
-  background: #1e293b;
-  color: #f1f5f9;
-}
-
-body.dark-mode .btn {
-  background: #38bdf8;
-  color: #0f172a;
-}
-
-.toggle-btn {
-  background: #64748b;
+/* ========== FOOTER ========== */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #111;
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
   font-size: 0.9rem;
-  transition: background 0.3s;
 }
 
-.toggle-btn:hover {
-  background: #475569;
-}
-/* ------------------------------
-   DARK MODE THEME
------------------------------- */
-body.dark-mode {
-  background-color: #0f172a;
-  color: #f1f5f9;
-  transition: background 0.3s, color 0.3s;
+.footer .social-icons {
+  margin-top: 1rem;
 }
 
-body.dark-mode a {
-  color: #38bdf8;
-}
-
-body.dark-mode .section {
-  background: #1e293b;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-body.dark-mode .footer {
-  background: #1e293b;
-  color: #f1f5f9;
-}
-
-body.dark-mode .btn {
-  background: #38bdf8;
-  color: #0f172a;
-}
-
-.toggle-btn {
-  background: #64748b;
+.footer .social-icons a {
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.3s;
+  margin: 0 12px;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
 }
 
-.toggle-btn:hover {
-  background: #475569;
-}
-/* ------------------------------
-   DARK MODE THEME
------------------------------- */
-body.dark-mode {
-  background-color: #0f172a;
-  color: #f1f5f9;
-  transition: background 0.3s, color 0.3s;
+/* Neon Hover Glow */
+.footer .social-icons a:hover {
+  color: #00c6ff;
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px #00c6ff, 0 0 30px #0072ff;
 }
 
-body.dark-mode a {
-  color: #38bdf8;
+/* ========== DARK MODE ========== */
+.dark-mode {
+  background-color: #111;
+  color: #eee;
 }
 
-body.dark-mode .section {
-  background: #1e293b;
-  border-radius: 8px;
-  padding: 20px;
+.dark-mode .header {
+  background: linear-gradient(120deg, #111, #222);
 }
 
-body.dark-mode .footer {
-  background: #1e293b;
-  color: #f1f5f9;
+.dark-mode h2 {
+  border-color: #00c6ff;
 }
 
-body.dark-mode .btn {
-  background: #38bdf8;
-  color: #0f172a;
+.dark-mode .btn {
+  background: linear-gradient(120deg, #00c6ff, #0072ff);
 }
 
-.toggle-btn {
-  background: #64748b;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.3s;
-}
-
-.toggle-btn:hover {
-  background: #475569;
+.dark-mode .footer {
+  background: #222;
 }
